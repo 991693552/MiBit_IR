@@ -2,23 +2,23 @@
 
 
 
-    //% color="#31C7D5" weight=19
+    //% color=#5b78fa weight=10 
     //% icon="\uf1eb"
-declare namespace mibit_IR {
+declare namespace Explorer_IR {
 
     /**
-     * button pushed.
+     * set button pressed event handler.
      */
-    //% blockId=ir_received_left_event
-    //% block="on |%btn| button pressed" shim=Mbit_IR::onPressEvent
+    //% blockId=explorer_ir_button_pressed_event
+    //% block="on button |%btn| pressed" shim=Explorer_IR::onPressEvent
     function onPressEvent(btn: RemoteButton, body: () => void): void;
-
     /**
      * initialises local variablesssss
      */
     //% blockId=ir_init
-    //% block="connect ir receiver to %pin" shim=Mbit_IR::init
+    //% block="connect ir receiver to %pin" shim=Explorer_IR::initIR
     function init(pin: Pins): void;
+
 }
 
 // Auto-generated. Do not edit. Really.

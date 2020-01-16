@@ -1,7 +1,7 @@
 // Auto-generated. Do not edit.
 
 
-    declare enum Pins {
+    declare const enum Pins {
     P0 = 3,
     P1 = 2,
     P2 = 1,
@@ -24,7 +24,8 @@
     }
 
 
-    declare enum RemoteButton {
+    declare const enum RemoteButton
+    {
     Power = 0x45,
     Menu = 0x47,
     Test = 0x44,
@@ -46,7 +47,7 @@
     Num8 = 0x52,
     Num9 = 0x4A,
     }
-declare namespace Mbit_IR {
+declare namespace Explorer_IR {
 }
 
 // Auto-generated. Do not edit. Really.
